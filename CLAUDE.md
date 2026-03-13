@@ -11,15 +11,21 @@ file:///C:/Users/leefl/ClaudeCodeTest/game.html
 
 ## Git Workflow
 
-After every change: commit with a descriptive message and push to keep GitHub in sync.
+**After every change, commit and push immediately.** Never leave work uncommitted — this ensures GitHub always reflects the latest state and we can revert to any point cleanly.
+
 - Remote: `https://github.com/leeflanagan2001projects/coat-shooter`
 - Branch: `master`
 
 ```bash
-git add game.html
-git commit -m "brief description of what changed"
+git add game.html        # or whichever files changed
+git commit -m "concise description of what changed and why"
 git push
 ```
+
+Commit message rules:
+- Use the imperative mood: "Add X", "Fix Y", "Remove Z"
+- One line is enough for small changes; add a blank line + detail for larger ones
+- Always push immediately after committing — do not batch multiple commits before pushing
 
 ## Architecture
 
